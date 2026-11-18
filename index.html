@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CronoftWeb | Desarrollo de Software & Diseño Web</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- NAVEGACIÓN -->
+    <header class="navbar">
+        <div class="container nav-content">
+            <a href="#inicio" class="logo">Cronoft<span>Web</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#sobre-mi">Sobre Mí</a></li>
+                    <li><a href="#contacto" class="btn-nav">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- SECCIÓN PRINCIPAL (HERO) -->
+    <section id="inicio" class="hero">
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <span class="badge">Desarrollo & Soluciones Digitales</span>
+                <h1>Soluciones digitales claras y efectivas para tu negocio</h1>
+                <p>Ayudo a empresas y profesionales a destacar mediante sistemas a medida, diseño web limpio y arquitectura de datos de alto rendimiento.</p>
+                <div class="hero-buttons">
+                    <a href="#contacto" class="btn-primary">Hablemos ahora</a>
+                    <a href="#servicios" class="btn-secondary">Ver servicios</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="img/logo.jpg" alt="Mathias Unocc - Desarrollador">
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN SERVICIOS -->
+    <section id="servicios" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Mis Servicios</h2>
+                <span class="header-line"></span>
+                <p>Enfoque directo en resultados, sin distracciones innecesarias.</p>
+            </div>
+            <div class="services-grid">
+                <div class="card">
+                    <div class="icon-box">01</div>
+                    <h3>Diseño Web</h3>
+                    <p>Creación de sitios web modernos, rápidos y adaptables a cualquier dispositivo móvil o de escritorio.</p>
+                </div>
+                <div class="card">
+                    <div class="icon-box">02</div>
+                    <h3>Desarrollo de Sistemas</h3>
+                    <p>Construcción de aplicaciones y sistemas robustos, eficientes y escalables utilizando Python o Java.</p>
+                </div>
+                <div class="card">
+                    <div class="icon-box">03</div>
+                    <h3>Bases de Datos</h3>
+                    <p>Diseño, modelado y optimización de bases de datos relacionales en Oracle y MySQL.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN SOBRE MÍ -->
+    <section id="sobre-mi" class="about">
+        <div class="container about-grid">
+            <div class="about-image">
+                <img src="img/logo.jpg" alt="Logo CronoftWeb">
+            </div>
+            <div class="about-text">
+                <h2>Experiencia y compromiso en cada proyecto</h2>
+                <p>Trabajo bajo una filosofía minimalista: menos ruido visual, mayor claridad en el mensaje y máxima eficiencia en el código.</p>
+                <ul class="check-list">
+                    <li><span class="check-icon">✔</span> Diseño 100% personalizado y limpio</li>
+                    <li><span class="check-icon">✔</span> Código estructurado y optimizado</li>
+                    <li><span class="check-icon">✔</span> Comunicación directa, presencial o virtual</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN CONTACTO -->
+    <section id="contacto" class="contact">
+        <div class="container contact-wrapper">
+            <div class="contact-info">
+                <h2>¿Listo para empezar?</h2>
+                <p>Completa el formulario y me pondré en contacto contigo en menos de 24 horas para evaluar tu proyecto.</p>
+                <div class="info-card">
+                    <div class="info-item">
+                        <strong>Correo electrónico:</strong>
+                        <span>cronoft@gmail.com</span>
+                    </div>
+                    <div class="info-item">
+                        <strong>Ubicación:</strong>
+                        <span>Lima, Perú</span>
+                    </div>
+                </div>
+            </div>
+
+            <form class="contact-form" action="/validar" method="POST">
+                <div class="form-group">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="tu@correo.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntame brevemente sobre lo que necesitas..." required></textarea>
+                </div>
+                <button type="submit" class="btn-primary full-width">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 Mathias Unocc — CronoftWeb. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
